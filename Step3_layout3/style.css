@@ -28,7 +28,8 @@ footer{
     border: 1px solid black;
 }
 
-.home-cards , .rubandark , .follow , .links , .sub-footer , #bigData-intro{
+/* The (ruban dark) corresponds to a set of two classes ruban and dark , we must therefore place a dot (.) between them in the selector in order to apply the style to both */
+.home-cards , .ruban.dark , .follow , .links , .sub-footer , #bigData-intro{
     background-color: #d3eaac;
     width: 100%;
     height: 100px;
