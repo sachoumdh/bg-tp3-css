@@ -1,0 +1,38 @@
+/* Universal selector (*) matches element of any type */
+*{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    background-color: red;
+    width: 90%;
+    margin: 0 auto; 
+    height: auto;
+    border: 1px solid black;
+    max-width: 1100px;
+}
+
+footer{
+    background-color: red;
+    width: 100%; 
+    height: 100px;
+    border: 1px solid black;
+}
+
+/* The (main-nav) and (showcase) classes have the same style, so they can be grouped together */
+.main-nav , .showcase{
+    background-color: #CCCCCC;
+    width: 100%;
+    height: 60px;
+    border: 1px solid black;
+}
+
+.home-cards , .rubandark , .follow , .links , .sub-footer , #bigData-intro{
+    background-color: #d3eaac;
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+
+}
+
