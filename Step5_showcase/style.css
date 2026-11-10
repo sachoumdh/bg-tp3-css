@@ -1,0 +1,128 @@
+/* Universal selector (*) matches element of any type */
+*{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    background-color: white;
+    width: 90%;
+    margin: 0 auto; 
+    height: auto;
+    border: 1px solid black;
+    max-width: 1100px;
+}
+
+footer{
+    background-color: red;
+    width: 100%; 
+    height: 100px;
+    border: 1px solid black;
+}
+
+/* We separate the (main-nav) and (showcase) classes, as each has a different style */
+.main-nav{
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Space horizontally */
+    height: 60px;
+    padding: 20px 0px;
+    font-size: 13px;
+    background-color: white;
+}
+
+/* Menu elements */
+li{
+    list-style-type: none; /* Remove the bullets from the items */
+    display: inline-block;  
+    padding: 10px; /* Space between menu items */
+    text-decoration: none; /* Remove the underlining from the elements */
+    padding-bottom: 2px; /* The space below the text */
+}
+
+.main-menu{
+    flex: 1; /* The menu takes up all the available space */
+    margin-left: 20px;
+}
+
+.logo{
+    width: 110px;
+}
+
+a{
+    text-decoration: none;
+    color: #262626; /* The color of the links */
+}
+
+/* Hover effect for the menu items */
+a:hover{
+    border-bottom: 2px solid black;
+}
+
+body{
+    font-family: Segoe UI; 
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Step 5 showcase */
+.showcase{
+    width: 100%; /* The showcase takes up all the available space */
+    height: 400px;
+
+    background-image: url("../img/slide1.png");
+    background-position: center top; /* The image is centered and aligned to the top */
+    background-size: 30%; /* The image is resized to 30% */
+    background-repeat: no-repeat;
+    background-origin: content-box; /* Specifies the origin position of the background image */
+    background-clip: content-box; /* Defines how far the background should extend within an element */
+
+    display: flex; /* The showcase takes up all the available space */
+    flex-direction: column; /* The flexible items (content) are displayed vertically, as a column */
+    align-items: center; /* Center horizontally when in a column */ 
+    justify-content: flex-end; /* Center vertically when in a column */
+    row-gap: 50px; /* Space between the elements */
+
+    margin-bottom: 20px; /* Space below the showcase */
+    background-color: white;
+    border: none;
+}
+
+/* Headings and paragraphs style */
+.showcase h2, .showcase p {
+    margin-bottom: 10px;
+}
+
+/* Button style */
+.btn{
+    margin-top: 20px; /* Space outside the element */
+    padding: 10px 20px; /* Space inside the button around its text */
+    border-radius: 10px;
+    background-color: #378ff5;
+    color: white;
+    font-weight: bold;
+    transition: opacity 0.2s ease; 
+}
+
+/* For the slight opacity effect when hovering over the button */
+.btn:hover{
+    opacity: 0.85; 
+}
+
+/* The class (dark) inverts the colors */
+.dark .btn{
+    color: white;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* The (ruban dark) corresponds to a set of two classes ruban and dark , we must therefore place a dot (.) between them in the selector in order to apply the style to both */
+.home-cards , .ruban.dark , .follow , .links , .sub-footer , #bigData-intro{
+    background-color: #d3eaac;
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+}
+
